@@ -9,4 +9,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', views.index, name='index'),
     url(r'^index/', views.index, name='index'),
+    # blog-list
+    url(r'^blog_list/', views.blog_list, name='blog_list'),
+
 ]

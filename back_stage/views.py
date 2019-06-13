@@ -5,7 +5,11 @@ from django.http import JsonResponse
 # -------str-------
 from django.http import HttpResponse 
 
-
+# 首界面
 def index(request):
     # return HttpResponse('Hello World!')
     return render(request, 'blank_page.html',{})
+
+
+def blog_list(request):
+    return render(request, 'blog-list.html',{})
